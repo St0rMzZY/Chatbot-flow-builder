@@ -1,20 +1,12 @@
-// src/App.js
 import React, { useState, useRef, useCallback } from 'react';
-import ReactFlow, {
-  ReactFlowProvider,
-  addEdge,
-  useNodesState,
-  useEdgesState,
-  Controls,
-  Background,
-} from 'reactflow';
+import ReactFlow, { ReactFlowProvider, addEdge, useNodesState, useEdgesState, Controls, Background } from 'reactflow';
 import 'reactflow/dist/style.css';
-
 import SidePanel from './components/SidePanel';
 import CustomTextNode from './components/CustomTextNode';
 import './App.css';
 
 const nodeTypes = { textNode: CustomTextNode };
+/* to generate unique ids for new nodes */
 let id = 1;
 const getId = () => `dndnode_${id++}`;
 
@@ -56,7 +48,7 @@ const App = () => {
         id: getId(),
         type,
         position,
-        data: { label: `test message ${id - 1}` },
+        data: { label: `test message ${id-1}` },
       };
       setNodes((nds) => nds.concat(newNode));
     },

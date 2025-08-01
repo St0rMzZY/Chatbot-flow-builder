@@ -1,5 +1,3 @@
-// src/components/CustomTextNode.js
-import React from 'react';
 import { Handle, Position } from 'reactflow';
 
 function CustomTextNode({ data, isConnectable }) {

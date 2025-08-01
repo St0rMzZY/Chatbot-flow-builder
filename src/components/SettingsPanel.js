@@ -1,5 +1,3 @@
-// src/components/SettingsPanel.js
-import React from 'react';
 
 const SettingsPanel = ({ selectedNode, updateNodeText, onBack }) => {
   const onTextChange = (event) => {

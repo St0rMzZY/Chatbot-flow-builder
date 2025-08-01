@@ -1,5 +1,3 @@
-// src/components/NodesPanel.js
-import React from 'react';
 
 const NodesPanel = () => {
   const onDragStart = (event, nodeType) => {

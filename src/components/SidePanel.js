@@ -1,5 +1,3 @@
-// src/components/SidePanel.js
-import React from 'react';
 import NodesPanel from './NodesPanel';
 import SettingsPanel from './SettingsPanel';
 
